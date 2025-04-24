@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Festivite - Crie seu convite digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="layout">
+        <div class="sidebar">
+          <div class="header-card">
+            <div class="header-content">
+              <img src="/assets/Logo.png" alt="Logo" class="logo" />
+              <h1 class="brand">Festivite</h1>
+              <p class="tagline">Crie um convite digital para o seu evento</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-content">
+          <div class="content-wrapper">
+            <h1 class="title">Crie seu convite</h1>
+
+            <form>
+              <div class="section-title">
+                <img src="/assets/calendar.png" alt="Evento" />
+                <span>Sobre o evento</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Título</label>
+                <input type="text" class="form-input" placeholder="Nome do evento" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group" style="flex: 1">
+                  <label class="form-label">Início</label>
+                  <input type="text" class="form-input" placeholder="DD/MM/AAAA, --:--" />
+                </div>
+
+                <div class="form-group" style="flex: 1">
+                  <label class="form-label">Fim</label>
+                  <input type="text" class="form-input" placeholder="DD/MM/AAAA, --:--" />
+                </div>
+              </div>
+
+              <div class="toggle-wrapper">
+                <input type="radio" name="tipo-evento" id="presencial" checked />
+                <label for="presencial" class="toggle-option">
+                  <img src="/assets/building-2.png" alt="Presencial" />
+                  <span>Presencial</span>
+                </label>
+
+                <input type="radio" name="tipo-evento" id="online" />
+                <label for="online" class="toggle-option">
+                  <img src="/assets/video.png" alt="Online" />
+                  <span>Online</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Local</label>
+                <input type="text" class="form-input" placeholder="Link ou endereço" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Descrição</label>
+                <textarea class="form-input form-textarea" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              </div>
+
+              <div class="section-title">
+                <img src="/assets/paintbrush-vertical.png" alt="Personalização" />
+                <span>Personalização</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Cor principal</label>
+                <div class="color-options">
+                  <div class="color-option" style="background-color: #59b2ff">
+                    <div class="color-dot" style="background-color: #59b2ff"></div>
+                  </div>
+                  <div class="color-option selected">
+                    <div class="color-dot" style="background-color: #ff598b"></div>
+                  </div>
+                  <div class="color-option">
+                    <div class="color-dot" style="background-color: #6959ff"></div>
+                  </div>
+                  <div class="color-option">
+                    <div class="color-dot" style="background-color: #ff59f9"></div>
+                  </div>
+                  <div class="color-option">
+                    <div class="color-dot" style="background-color: #ff5959"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Tema do evento</label>
+                <div class="theme-grid">
+                  <div class="theme-card selected">
+                    <img src="/assets/aniversario.png" alt="Aniversário" class="theme-image" />
+                    <div class="theme-name">Aniversário</div>
+                  </div>
+                  <div class="theme-card">
+                    <img src="/assets/infantil.png" alt="Infantil" class="theme-image" />
+                    <div class="theme-name">Infantil</div>
+                  </div>
+                  <div class="theme-card">
+                    <img src="/assets/formatura.png" alt="Formatura" class="theme-image" />
+                    <div class="theme-name">Formatura</div>
+                  </div>
+                  <div class="theme-card">
+                    <img src="/assets/casamento.png" alt="Casamento" class="theme-image" />
+                    <div class="theme-name">Casamento</div>
+                  </div>
+                  <div class="theme-card">
+                    <img src="/assets/chabebe.png" alt="Chá de Bebê" class="theme-image" />
+                    <div class="theme-name">Chá de Bebê</div>
+                  </div>
+                  <div class="theme-card">
+                    <img src="/assets/chapanela.png" alt="Chá de Panela" class="theme-image" />
+                    <div class="theme-name">Chá de Panela</div>
+                  </div>
+                  <div class="theme-card">
+                    <img src="/assets/carnaval.png" alt="Carnaval" class="theme-image" />
+                    <div class="theme-name">Carnaval</div>
+                  </div>
+                  <div class="theme-card">
+                    <img src="/assets/pascoa.png" alt="Páscoa" class="theme-image" />
+                    <div class="theme-name">Páscoa</div>
+                  </div>
+                  <div class="theme-card">
+                    <img src="/assets/saojoao.png" alt="São João" class="theme-image" />
+                    <div class="theme-name">São João</div>
+                  </div>
+                  <div class="theme-card">
+                    <img src="/assets/hallowen.png" alt="Hallowen" class="theme-image" />
+                    <div class="theme-name">Hallowen</div>
+                  </div>
+                  <div class="theme-card">
+                    <img src="/assets/natal.png" alt="Natal" class="theme-image" />
+                    <div class="theme-name">Natal</div>
+                  </div>
+                  <div class="theme-card">
+                    <img src="/assets/outro.png" class="theme-image" />
+                    <div class="theme-name">Outro</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group" style="flex: 1">
+                  <label class="form-label">Estilo</label>
+                  <div class="toggle-wrapper">
+                    <input type="radio" name="estilo" id="escuro" checked />
+                    <label for="escuro" class="toggle-option">Escuro</label>
+
+                    <input type="radio" name="estilo" id="claro" />
+                    <label for="claro" class="toggle-option">Claro</label>
+                  </div>
+                </div>
+
+                <div class="form-group" style="flex: 2">
+                  <label class="form-label">Foto de capa</label>
+                  <div class="toggle-group">
+                    <button class="button upload-button">
+                      <img src="/assets/upload.png" alt="Upload" />
+                      <span>Selecionar</span>
+                    </button>
+                    <span class="upload-text">Nenhum arquivo selecionado</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-title">
+                <img src="/assets/contact.png" alt="Contato" />
+                <span>Dados para contato</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-input" placeholder="Nome completo" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group" style="flex: 1">
+                  <label class="form-label">E-mail</label>
+                  <input type="email" class="form-input" placeholder="exemplo@email.com" />
+                </div>
+
+                <div class="form-group" style="flex: 1">
+                  <label class="form-label">Telefone</label>
+                  <input type="tel" class="form-input" placeholder="(99) 99999-9999" />
+                </div>
+              </div>
+
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <div class="checkbox checked"></div>
+                  <span class="form-label" style="margin: 0">
+                    Li e concordo com os <a href="#" style="color: #59b2ff; text-decoration: underline">Termos e Condições</a> e com a <a href="#" style="color: #59b2ff; text-decoration: underline">Política de Privacidade</a>
+                  </span>
+                </label>
+
+                <label class="checkbox-label">
+                  <div class="checkbox"></div>
+                  <span class="form-label" style="margin: 0">
+                    Aceito receber atualizações e promoções por e-mail
+                  </span>
+                </label>
+
+                <label class="checkbox-label">
+                  <div class="checkbox"></div>
+                  <span class="form-label" style="margin: 0">
+                    Aceito receber atualizações e promoções por SMS
+                  </span>
+                </label>
+              </div>
+
+              <div class="button-group">
+                <button type="submit" class="button">
+                  <img src="/assets/ticket.png" alt="Ticket" />
+                  <span>Gerar convite</span>
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
